@@ -7,5 +7,5 @@ RUN apk add apache2 \
 && apk add --update curl \
 && rm -rf /etc/apk/cache
 CMD ["/tmp/script.sh"]
-
+#dsadas
 EXPOSE 80
