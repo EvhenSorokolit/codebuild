@@ -5,9 +5,12 @@ phases:
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
-      - echo $CI
+      - echo $TG_TOKENT
+      - echo $API_KEY
+      - echo $APP_NAME
+      - echo $TAG
     
-
+ 
 
       
   build:
