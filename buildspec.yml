@@ -6,7 +6,7 @@ phases:
     commands:
       - echo Nothing to do in the pre_build phase...
       - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://0.0.0.0:2375 --storage-driver=overlay&
-      - sleep 20
+      - sleep 120
   build:
     commands:
       - echo  $(docker --version)
