@@ -5,16 +5,10 @@ phases:
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
-      - apt update
-      - sleep 15
-     
-      - apt install docker-ce
-      - sudo systemctl status docker
+    
 
 
-
-
-      - sleep 120
+      
   build:
     commands:
       - echo  $(docker --version)
