@@ -5,7 +5,8 @@ phases:
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
-      - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://0.0.0.0:2375 --storage-driver=overlay&
+      - apt update
+      - apt install docker
       - sleep 120
   build:
     commands:
