@@ -7,6 +7,8 @@ phases:
       - echo Nothing to do in the pre_build phase...
       - echo  $(docker --version)
       - echo $(aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin 353641719040.dkr.ecr.eu-central-1.amazonaws.com)
+      - docker build  -t 353641719040.dkr.ecr.eu-central-1.amazonaws.com/test:1245 .
+      -  echo $(docker push 353641719040.dkr.ecr.eu-central-1.amazonaws.com/test:1245 )
   build:
     commands:
       - echo Build started on `date`
